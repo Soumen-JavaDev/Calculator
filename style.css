@@ -1,84 +1,75 @@
+body {
+  background-color: #F0F0F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
-  body {
-    background-color: #F0F0F3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
+#calculator {
+  border: 1px solid #d1d1d1;
+  width: 350px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px #589208, -10px -10px 20px #ffffff;
+  max-width: 100%;
+}
 
+@media (max-width: 768px) {
   #calculator {
-    border: 1px solid #d1d1d1;
-    width: 350px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 10px 10px 20px #c63030, -10px -10px 20px #ffffff;
+    width: 90vw;
   }
+}
 
-  .input_box {
-    width: 100%;
-    height: 60px;
-    font-size: 27px;
-    text-align: right;
-    padding-right: 15px;
-    background-color: #f0f0f3;
-    color: #232723;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: inset 5px 5px 10px #bfbfbf, inset -5px -5px 10px #ffffff;
-  }
+.input_box {
+  width: 100%;
+  height: 60px;
+  font-size: 27px;
+  text-align: right;
+  padding-right: 15px;
+  background-color: #f0f0f3;
+  color: #232723;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 5px 5px 10px #bfbfbf, inset -5px -5px 10px #ffffff;
+}
 
-  .button {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    background-color: #F0F0F3;
-  }
+.button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #F0F0F3;
+}
 
-  .button_size {
-    height: 60px;
-    width: 75px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    color: #333333;
-  }
+.button_size {
+  height: 60px;
+  width: 75px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #333333;
+}
 
-  /* Number buttons */
-  .number_button {
-    background-color: #E0E0E0;
-    box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
-  }
+/* Number buttons */
+.number_button {
+  background-color: #E0E0E0;
+  box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
+}
 
-  /* Operator buttons */
-  .operator_button {
-    background-color: #FFB74D;
-    box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
-  }
+/* Operator buttons */
+.operator_button {
+  background-color: #FFB74D;
+  box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
+}
 
-  /* Equal button */
-  .equal_button {
-    background-color: #4CAF50;
-    color: white;
-    box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
-  }
-
-  /* Clear and back buttons */
-  .clear_button,
-  .back_button {
-    background-color: #E57373;
-    color: white;
-    box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff;
-  }
-
-  /* Button hover effect */
-  .button_size:hover {
-    transform: translateY(-3px);
-    box-shadow: 3px 3px 7px #bfbfbf, -3px -3px 7px #ffffff;
-  }
+/* Equal button */
+.equal_button {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 5px 5px 10px #bfbfbf, -5px -5px 10px #ffffff
